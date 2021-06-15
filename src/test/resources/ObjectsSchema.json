@@ -1,0 +1,386 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "array",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": [],
+  "examples": [
+    [
+      {
+        "_id": "60c6483a3837ce6ec31fd556",
+        "index": 0,
+        "guid": "f3b3f77b-cffa-49c7-98dc-dc0891eb166d",
+        "isActive": true,
+        "balance": "$2,844.70",
+        "age": 26,
+        "eyeColor": "brown",
+        "name": "Nora King",
+        "gender": "female",
+        "email": "noraking@panzent.com",
+        "phone": "+1 (830) 423-3531",
+        "address": "971 Broome Street, Teasdale, North Carolina, 3238",
+        "registered": "2015-03-14T06:30:24 +04:00",
+        "tags": [
+          "eu",
+          "ex",
+          "irure",
+          "dolor",
+          "adipisicing",
+          "sit",
+          "dolore"
+        ],
+        "friends": [
+          {
+            "id": 0,
+            "name": "Logan Rogers"
+          },
+          {
+            "id": 1,
+            "name": "Albert Buck"
+          },
+          {
+            "id": 2,
+            "name": "Vicki Winters"
+          }
+        ]
+      },
+      {
+        "_id": "60c6483a6b4bb9d93a38fb5a",
+        "index": 1,
+        "guid": "10eba3f7-2515-40bf-8fff-1958929dd956",
+        "isActive": false,
+        "balance": "$1,346.63",
+        "age": 36,
+        "eyeColor": "brown",
+        "name": "Katina Rosa",
+        "gender": "female",
+        "email": "katinarosa@panzent.com",
+        "phone": "+1 (968) 538-2284",
+        "address": "570 Ford Street, Coral, Tennessee, 914",
+        "registered": "2018-08-28T12:02:55 +04:00",
+        "tags": [
+          "tempor",
+          "quis",
+          "aliqua",
+          "nisi",
+          "elit",
+          "Lorem",
+          "adipisicing"
+        ],
+        "friends": [
+          {
+            "id": 0,
+            "name": "Meredith Valenzuela"
+          },
+          {
+            "id": 1,
+            "name": "Trisha Burch"
+          },
+          {
+            "id": 2,
+            "name": "Ina Carney"
+          }
+        ]
+      }
+    ]
+  ],
+  "additionalItems": true,
+  "items": {
+    "$id": "#/items",
+    "anyOf": [
+      {
+        "$id": "#/items/anyOf/0",
+        "type": "object",
+        "title": "The first anyOf schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "examples": [
+          {
+            "_id": "60c6483a3837ce6ec31fd556",
+            "index": 0,
+            "guid": "f3b3f77b-cffa-49c7-98dc-dc0891eb166d",
+            "isActive": true,
+            "balance": "$2,844.70",
+            "age": 26,
+            "eyeColor": "brown",
+            "name": "Nora King",
+            "gender": "female",
+            "email": "noraking@panzent.com",
+            "phone": "+1 (830) 423-3531",
+            "address": "971 Broome Street, Teasdale, North Carolina, 3238",
+            "registered": "2015-03-14T06:30:24 +04:00",
+            "tags": [
+              "eu",
+              "ex",
+              "irure",
+              "dolor",
+              "adipisicing",
+              "sit",
+              "dolore"
+            ],
+            "friends": [
+              {
+                "id": 0,
+                "name": "Logan Rogers"
+              },
+              {
+                "id": 1,
+                "name": "Albert Buck"
+              },
+              {
+                "id": 2,
+                "name": "Vicki Winters"
+              }
+            ]
+          }
+        ],
+        "required": [
+          "_id",
+          "index",
+          "guid",
+          "isActive",
+          "balance",
+          "age",
+          "eyeColor",
+          "name",
+          "gender",
+          "email",
+          "phone",
+          "address",
+          "registered",
+          "tags",
+          "friends"
+        ],
+        "properties": {
+          "_id": {
+            "$id": "#/items/anyOf/0/properties/_id",
+            "type": "string",
+            "title": "The _id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "60c6483a3837ce6ec31fd556"
+            ]
+          },
+          "index": {
+            "$id": "#/items/anyOf/0/properties/index",
+            "type": "integer",
+            "title": "The index schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "guid": {
+            "$id": "#/items/anyOf/0/properties/guid",
+            "type": "string",
+            "title": "The guid schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "f3b3f77b-cffa-49c7-98dc-dc0891eb166d"
+            ]
+          },
+          "isActive": {
+            "$id": "#/items/anyOf/0/properties/isActive",
+            "type": "boolean",
+            "title": "The isActive schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+              true
+            ]
+          },
+          "balance": {
+            "$id": "#/items/anyOf/0/properties/balance",
+            "type": "string",
+            "title": "The balance schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "$2,844.70"
+            ]
+          },
+          "age": {
+            "$id": "#/items/anyOf/0/properties/age",
+            "type": "integer",
+            "title": "The age schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              26
+            ]
+          },
+          "eyeColor": {
+            "$id": "#/items/anyOf/0/properties/eyeColor",
+            "type": "string",
+            "title": "The eyeColor schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "brown"
+            ]
+          },
+          "name": {
+            "$id": "#/items/anyOf/0/properties/name",
+            "type": "string",
+            "title": "The name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "Nora King"
+            ]
+          },
+          "gender": {
+            "$id": "#/items/anyOf/0/properties/gender",
+            "type": "string",
+            "title": "The gender schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "female"
+            ]
+          },
+          "email": {
+            "$id": "#/items/anyOf/0/properties/email",
+            "type": "string",
+            "title": "The email schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "noraking@panzent.com"
+            ]
+          },
+          "phone": {
+            "$id": "#/items/anyOf/0/properties/phone",
+            "type": "string",
+            "title": "The phone schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "+1 (830) 423-3531"
+            ]
+          },
+          "address": {
+            "$id": "#/items/anyOf/0/properties/address",
+            "type": "string",
+            "title": "The address schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "971 Broome Street, Teasdale, North Carolina, 3238"
+            ]
+          },
+          "registered": {
+            "$id": "#/items/anyOf/0/properties/registered",
+            "type": "string",
+            "title": "The registered schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "2015-03-14T06:30:24 +04:00"
+            ]
+          },
+          "tags": {
+            "$id": "#/items/anyOf/0/properties/tags",
+            "type": "array",
+            "title": "The tags schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+              [
+                "eu",
+                "ex"
+              ]
+            ],
+            "additionalItems": true,
+            "items": {
+              "$id": "#/items/anyOf/0/properties/tags/items",
+              "anyOf": [
+                {
+                  "$id": "#/items/anyOf/0/properties/tags/items/anyOf/0",
+                  "type": "string",
+                  "title": "The first anyOf schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "",
+                  "examples": [
+                    "eu",
+                    "ex"
+                  ]
+                }
+              ]
+            }
+          },
+          "friends": {
+            "$id": "#/items/anyOf/0/properties/friends",
+            "type": "array",
+            "title": "The friends schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+              [
+                {
+                  "id": 0,
+                  "name": "Logan Rogers"
+                },
+                {
+                  "id": 1,
+                  "name": "Albert Buck"
+                }
+              ]
+            ],
+            "additionalItems": true,
+            "items": {
+              "$id": "#/items/anyOf/0/properties/friends/items",
+              "anyOf": [
+                {
+                  "$id": "#/items/anyOf/0/properties/friends/items/anyOf/0",
+                  "type": "object",
+                  "title": "The first anyOf schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": {},
+                  "examples": [
+                    {
+                      "id": 0,
+                      "name": "Logan Rogers"
+                    }
+                  ],
+                  "required": [
+                    "id",
+                    "name"
+                  ],
+                  "properties": {
+                    "id": {
+                      "$id": "#/items/anyOf/0/properties/friends/items/anyOf/0/properties/id",
+                      "type": "integer",
+                      "title": "The id schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": 0,
+                      "examples": [
+                        0
+                      ]
+                    },
+                    "name": {
+                      "$id": "#/items/anyOf/0/properties/friends/items/anyOf/0/properties/name",
+                      "type": "string",
+                      "title": "The name schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "Logan Rogers"
+                      ]
+                    }
+                  },
+                  "additionalProperties": true
+                }
+              ]
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    ]
+  }
+}
