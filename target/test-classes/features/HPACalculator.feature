@@ -1,7 +1,7 @@
 Feature: As a user I entered valid credentials, click Calculate
   and Results and Summary Table should be displayed
 
-  @hp
+  @hp @smoke
   Scenario: I entered valid credentials and Calculated affordable mortgage
     Given user sees both tabs at the same time
     When User enters: Current combined annual income
