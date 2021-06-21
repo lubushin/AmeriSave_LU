@@ -43,11 +43,15 @@ public class HPACalculatorStepDefinition extends base_page {
         String defaultValue = combinedIncome.getAttribute("value");
         int actual = Integer.parseInt(defaultValue);
         int expectedValue = Integer.parseInt("0");
+        //System.out.println("actual = " + actual);
+        //System.out.println("expectedValue = " + expectedValue);
         assertEquals(expectedValue, actual);
         combinedIncome.clear();
         combinedIncome.sendKeys("999,999,999");
         String expectedIncome = "999,999,999";
         String actualIncome = combinedIncome.getAttribute("value");
+        //System.out.println("expectedIncome = " + expectedIncome);
+        //System.out.println("actualIncome = " + actualIncome);
         assertEquals(expectedIncome, actualIncome);
     }
 
@@ -176,11 +180,20 @@ public class HPACalculatorStepDefinition extends base_page {
 
         mortgageRate.clear();
         mortgageRate.sendKeys("0");
+        String actualRate = mortgageRate.getAttribute("value");
+        String expectedRate = "0";
+        //System.out.println("actualRate = " + actualRate);
+        //System.out.println("expectedRate = " + expectedRate);
+        assertEquals(expectedRate,actualRate);
         mortgageRate.clear();
         mortgageRate.sendKeys("40");
-        String actualRate = mortgageRate.getAttribute("value");
-        String expectedRate = "40";
+        String actualRate1 = mortgageRate.getAttribute("value");
+        String expectedRate1 = "40";
+
         assertEquals(expectedRate, actualRate);
+        //System.out.println("actualRate1 = " + actualRate1);
+        //System.out.println("expectedRate1 = " + expectedRate1);
+
     }
 
 
@@ -191,6 +204,8 @@ public class HPACalculatorStepDefinition extends base_page {
         WebElement option = bRatio.getFirstSelectedOption();
         String backDefaultValue = option.getText();
         String expectedValue = "36%";
+        //System.out.println("backDefaultValue = " + backDefaultValue);
+        //System.out.println("expectedValue = " + expectedValue);
         assertEquals(expectedValue, backDefaultValue);
         backRatio.click();
 
@@ -201,6 +216,8 @@ public class HPACalculatorStepDefinition extends base_page {
             actualOption.add(each.getText());
 
         }
+        //System.out.println("expectedOption = " + expectedOption);
+        //System.out.println("actualOption = " + actualOption);
         assertEquals(expectedOption, actualOption);
 
         bRatio.selectByVisibleText("36%");

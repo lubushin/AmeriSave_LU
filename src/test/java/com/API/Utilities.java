@@ -31,6 +31,7 @@ public class Utilities {
     }
 
     public static Pojo setRandomJsonObjectPojo() {
+
         pojoObject.set_id(faker.bothify("##?####?####??#??##?d###"));
         pojoObject.setIndex(faker.number().randomDigit());
         pojoObject.setGuid(faker.bothify("?#?#?##?-????-##?#-####-##?###??###?"));
@@ -45,7 +46,9 @@ public class Utilities {
         pojoObject.setAddress(faker.number().numberBetween(100, 999) + " " + faker.address().streetName() + ", " + faker.address().cityName() + ", " + faker.address().state() + ", " + faker.number().numberBetween(100, 10000));
         pojoObject.setTags(faker.lorem().words().toArray(new String[3]));
         pojoObject.setId(faker.number().randomDigit());
+
         return pojoObject;
+
     }
 }
 

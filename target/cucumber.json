@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-06-15T14:45:11.964Z",
+        "start_timestamp": "2021-06-21T19:48:51.478Z",
         "before": [
           {
             "result": {
-              "duration": 5125000000,
+              "duration": 4329000000,
               "status": "passed"
             },
             "match": {
@@ -16,7 +16,7 @@
           },
           {
             "result": {
-              "duration": 1095000000,
+              "duration": 1129000000,
               "status": "passed"
             },
             "match": {
@@ -31,7 +31,7 @@
         "after": [
           {
             "result": {
-              "duration": 128000000,
+              "duration": 133000000,
               "status": "passed"
             },
             "match": {
@@ -52,7 +52,7 @@
         "steps": [
           {
             "result": {
-              "duration": 36000000,
+              "duration": 39000000,
               "status": "passed"
             },
             "line": 6,
@@ -64,7 +64,7 @@
           },
           {
             "result": {
-              "duration": 161000000,
+              "duration": 201000000,
               "status": "passed"
             },
             "line": 7,
@@ -76,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 148000000,
+              "duration": 117000000,
               "status": "passed"
             },
             "line": 8,
@@ -88,7 +88,7 @@
           },
           {
             "result": {
-              "duration": 111000000,
+              "duration": 85000000,
               "status": "passed"
             },
             "line": 9,
@@ -100,7 +100,7 @@
           },
           {
             "result": {
-              "duration": 81000000,
+              "duration": 83000000,
               "status": "passed"
             },
             "line": 10,
@@ -112,7 +112,7 @@
           },
           {
             "result": {
-              "duration": 88000000,
+              "duration": 82000000,
               "status": "passed"
             },
             "line": 11,
@@ -136,7 +136,7 @@
           },
           {
             "result": {
-              "duration": 103000000,
+              "duration": 116000000,
               "status": "passed"
             },
             "line": 13,
@@ -148,7 +148,7 @@
           },
           {
             "result": {
-              "duration": 79000000,
+              "duration": 84000000,
               "status": "passed"
             },
             "line": 14,
@@ -160,7 +160,7 @@
           },
           {
             "result": {
-              "duration": 81000000,
+              "duration": 80000000,
               "status": "passed"
             },
             "line": 15,
@@ -172,7 +172,7 @@
           },
           {
             "result": {
-              "duration": 177000000,
+              "duration": 159000000,
               "status": "passed"
             },
             "line": 16,
@@ -184,7 +184,7 @@
           },
           {
             "result": {
-              "duration": 421000000,
+              "duration": 422000000,
               "status": "passed"
             },
             "line": 17,
@@ -196,7 +196,7 @@
           },
           {
             "result": {
-              "duration": 343000000,
+              "duration": 340000000,
               "status": "passed"
             },
             "line": 18,
@@ -208,7 +208,7 @@
           },
           {
             "result": {
-              "duration": 140000000,
+              "duration": 153000000,
               "status": "passed"
             },
             "line": 19,
@@ -220,7 +220,7 @@
           },
           {
             "result": {
-              "duration": 373000000,
+              "duration": 379000000,
               "status": "passed"
             },
             "line": 20,
@@ -232,7 +232,7 @@
           },
           {
             "result": {
-              "duration": 264000000,
+              "duration": 303000000,
               "status": "passed"
             },
             "line": 21,
@@ -256,391 +256,5 @@
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/HPACalculator.feature",
     "tags": []
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "line": 4,
-        "name": "user is on landing page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2021-06-15T14:45:21.069Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3636000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.before()"
-            }
-          },
-          {
-            "result": {
-              "duration": 1169000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.UI.step_definitions.HPACalculatorStepDefinition.before()"
-            }
-          }
-        ],
-        "line": 6,
-        "name": "verification of fields, accept numbers from 0 to 999,999,999 with invalid values",
-        "description": "",
-        "id": "verification-test-cases-with-invalid-values;verification-of-fields--accept-numbers-from-0-to-999-999-999-with-invalid-values",
-        "after": [
-          {
-            "result": {
-              "duration": 167000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.UI.step_definitions.HPACalculatorStepDefinition.after()"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.after()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 434000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User enters invalid values to Current combined annual income",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.i_enter_invalid_values_to_current_combined_annual_income()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 21000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User should be able to see the error message",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.error_message()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 214000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User enters invalid values to Monthly auto payments",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.user_enters_invalid_values_to_monthly_auto_payments()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 19000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User should be able to see the error message1",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.user_should_be_able_to_see_the_error_message1()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 217000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User enters invalid values to Monthly association fees",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.user_enters_invalid_values_to_monthly_association_fees()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 18000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User should be able to see the error message2",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.user_should_be_able_to_see_the_error_message2()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 218000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User enters invalid values to Monthly child support payments",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.user_enters_invalid_values_to_monthly_child_support_payments()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 17000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User should be able to see the error message3",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.user_should_be_able_to_see_the_error_message3()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 211000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User enters invalid values to Monthly credit card payments",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.user_enters_invalid_values_to_monthly_credit_card_payments()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 15000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User should be able to see the error message4",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.user_should_be_able_to_see_the_error_message4()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 215000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User enters invalid values to Other monthly obligations",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.user_enters_invalid_values_to_other_monthly_obligations()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 18000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User should be able to see the error message5",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.user_should_be_able_to_see_the_error_message5()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 215000000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "User enters invalid values to Funds available for a down payment",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.user_enters_invalid_values_to_funds_available_for_a_down_payment()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 16000000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User should be able to see the error message6",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.user_should_be_able_to_see_the_error_message6()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 221000000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User enters invalid values to Estimated annual homeowner\u0027s insurance",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.user_enters_invalid_values_to_estimated_annual_homeowner_s_insurance()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 15000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "User should be able to see the error message7",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.user_should_be_able_to_see_the_error_message7()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 217000000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "User enters invalid values to Estimated annual property taxes",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.user_enters_invalid_values_to_estimated_annual_property_taxes()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 17000000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User should be able to see the error message8",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.user_should_be_able_to_see_the_error_message8()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@nf"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "user is on landing page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2021-06-15T14:45:28.370Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3950000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.before()"
-            }
-          },
-          {
-            "result": {
-              "duration": 954000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.UI.step_definitions.HPACalculatorStepDefinition.before()"
-            }
-          }
-        ],
-        "line": 26,
-        "name": "verification of mortgage rate with invalid values, accepts numbers between 0 to 40",
-        "description": "",
-        "id": "verification-test-cases-with-invalid-values;verification-of-mortgage-rate-with-invalid-values--accepts-numbers-between-0-to-40",
-        "after": [
-          {
-            "result": {
-              "duration": 123000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.UI.step_definitions.HPACalculatorStepDefinition.after()"
-            }
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.after()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 406000000,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User enters invalid values to Annual interest rate on new mortgage",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.invalidValues_to_annual_interest_rate_mortgage()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 20000000,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "the error message should be appeared",
-            "match": {
-              "location": "com.UI.step_definitions.HPACalcNegative_StepDefinition.the_error_message_should_be_appeared()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@nf"
-          }
-        ]
-      }
-    ],
-    "name": "verification test cases with invalid values",
-    "description": "",
-    "id": "verification-test-cases-with-invalid-values",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/HPACalcultorNegative.feature",
-    "tags": [
-      {
-        "name": "@nf",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
   }
 ]

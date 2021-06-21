@@ -5,7 +5,8 @@ import com.UI.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.concurrent.TimeUnit;
 
 public class base_page {
 
@@ -83,8 +84,8 @@ public class base_page {
 
     public void setUp() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url_lanPage"));
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 2);
-
+        //WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 2);
+        Driver.getDriver().manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
     }
 
     public void clickShowAllInput() {
