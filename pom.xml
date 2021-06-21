@@ -30,10 +30,12 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
-                    <testFailureIgnore>false</testFailureIgnore>
                     <includes>
                         <include>**/CukesRunner*.java</include>
+                        <include>**/FailedTestRunner.java</include>
                     </includes>
+                    <testFailureIgnore>false</testFailureIgnore>
+
                 </configuration>
             </plugin>
 
