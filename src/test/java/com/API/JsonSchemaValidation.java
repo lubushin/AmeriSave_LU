@@ -33,7 +33,7 @@ public class JsonSchemaValidation {
     when()
             .get("/items").
             then()
-            .body(matchesJsonSchemaInClasspath("ObjectsSchema.json"))
+            .body(matchesJsonSchemaInClasspath("com/API/ObjectsSchema.json"))
             .body(matchesJsonSchema(new File("src/test/resources/ObjectsSchema.json")));
 
   }
@@ -49,7 +49,7 @@ public class JsonSchemaValidation {
             .then()
             .log().body()
             .statusCode(200)
-            .body(matchesJsonSchemaInClasspath("ObjectsSchema.json"));
+            .body(matchesJsonSchemaInClasspath("com/API/ObjectsSchema.json"));
 
   }
 }
