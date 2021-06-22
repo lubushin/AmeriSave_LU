@@ -1,8 +1,9 @@
-@nf
+
 Feature: verification test cases with invalid values
 
   Background: user is on landing page
 
+  @regression
   Scenario: verification of fields, accept numbers from 0 to 999,999,999 with invalid values
     When User enters invalid values to Current combined annual income
     Then User should be able to see the error message
@@ -23,6 +24,7 @@ Feature: verification test cases with invalid values
     And User enters invalid values to Estimated annual property taxes
     Then User should be able to see the error message8
 
+  @regression
   Scenario: verification of mortgage rate with invalid values, accepts numbers between 0 to 40
     When User enters invalid values to Annual interest rate on new mortgage
     Then the error message should be appeared
