@@ -182,8 +182,8 @@ public class HPACalculatorStepDefinition extends base_page {
         mortgageRate.sendKeys("0");
         String actualRate = mortgageRate.getAttribute("value");
         String expectedRate = "0";
-        //System.out.println("actualRate = " + actualRate);
-        //System.out.println("expectedRate = " + expectedRate);
+        System.out.println("actualRate = " + actualRate);
+        System.out.println("expectedRate = " + expectedRate);
         assertEquals(expectedRate,actualRate);
         mortgageRate.clear();
         mortgageRate.sendKeys("40");
@@ -191,8 +191,8 @@ public class HPACalculatorStepDefinition extends base_page {
         String expectedRate1 = "40";
 
         assertEquals(expectedRate, actualRate);
-        //System.out.println("actualRate1 = " + actualRate1);
-        //System.out.println("expectedRate1 = " + expectedRate1);
+        System.out.println("actualRate1 = " + actualRate1);
+        System.out.println("expectedRate1 = " + expectedRate1);
 
     }
 
